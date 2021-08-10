@@ -11,32 +11,32 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Container(
-                width: 30.0,
+            child: Column(
+          children: <Widget>[
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/YoonsooOh.png'),
+            ),
+            Text(
+              'Yoonsoo Oh',
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                fontSize: 40.0,
                 color: Colors.white,
-                child: Text('container 1'),
+                fontWeight: FontWeight.bold,
               ),
-              SizedBox(
-                width: 30.0,
-              ),
-              Container(
-                color: Colors.blue,
-                child: Text('container 2'),
-              ),
-              Container(
-                color: Colors.red,
-                child: Text('container 3'),
-              ),
-              Container(
-                width: double.infinity,
-                height: 10.0,
-              )
-            ],
-          ),
-        ),
+            ),
+            Text(
+              'FLUTTER DEVELOPER',
+              style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  color: Colors.teal.shade100,
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold),
+            )
+          ],
+        )),
       ),
     );
   }
